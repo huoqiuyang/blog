@@ -32,6 +32,12 @@
             <artifactId>mybatis-plus-core</artifactId>
             <version>3.4.2</version>
         </dependency>
+<!--JWT-->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.5.0</version>
+        </dependency>
 
 <!--mybatis-plus-->
         <dependency>
