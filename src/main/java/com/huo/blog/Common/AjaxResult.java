@@ -97,6 +97,7 @@ public class AjaxResult extends HashMap<String,Object> {
     }
 
 
+    public static AjaxResult success(String msg){return new AjaxResult(200,true,msg,null);}
 
     /**
      * 返回成功消息
