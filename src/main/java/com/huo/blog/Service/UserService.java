@@ -11,4 +11,6 @@ public interface UserService {
     void saveOrUpdate(UserVo vo);
 
     User findById(Integer userId);
+
+    void test(Integer aa);
 }

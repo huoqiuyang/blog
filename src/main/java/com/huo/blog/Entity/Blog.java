@@ -21,6 +21,8 @@ public class Blog {
 
     private String blogType;  //分类
 
+    private Integer typeId;   // 分类的id号
+
     private String flag;  //标签
 
     private Date createTime;

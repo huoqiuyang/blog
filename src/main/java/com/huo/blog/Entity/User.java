@@ -34,4 +34,6 @@ public class User {
 
     private Date updateTime;
 
+    private Integer ter;
+
 }

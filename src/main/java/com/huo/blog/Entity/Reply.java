@@ -26,5 +26,7 @@ public class Reply {
 
     private String beReplyName;  //被回复人昵称
 
+    private String content;     //回复内容
+
     private Date createTime;    //回复时间
 }

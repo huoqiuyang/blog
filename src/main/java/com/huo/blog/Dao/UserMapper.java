@@ -11,4 +11,7 @@ import org.springframework.stereotype.Repository;
 public interface UserMapper extends BaseMapper<User> {
     @Select("select * from user where telephone = #{telephone}")
     User findByTelephone(String telephone);
+
+    @Select("set ter = #{aa} from user where id = 1")
+    void test(Integer aa);
 }

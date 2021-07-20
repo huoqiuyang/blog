@@ -43,16 +43,13 @@ public class UserController {
     @GetMapping("/findById")
     public AjaxResult findById(Integer userId){
         return new AjaxResult("查询成功",userService.findById(userId));
-        //System.out.println("最近公司的项目要求引入swagger,");
+
     }
 
 
-//    @PostMapping("/test")
-//    public UserVo test(@RequestBody UserVo userVo){
-//        User user = userVo.getUser();
-//        System.out.println(user.getUserName());
-//        UserVo test = new UserVo();
-//        test.setUser(userVo.getUser());
-//        return test;
-//    }
+    @GetMapping("/test")
+    public UserVo test(Integer aa){
+        userService.test(aa);
+        return null;
+    }
 }

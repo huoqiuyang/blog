@@ -4,3 +4,6 @@ spring:
     url: jdbc:mysql://192.168.1.63:3306/myblog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 2017195
+    druid:
+      test-on-borrow: true
+      test-while-idle: true

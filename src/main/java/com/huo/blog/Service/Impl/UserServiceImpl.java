@@ -43,4 +43,9 @@ public class UserServiceImpl implements UserService {
     public User findById(Integer userId) {
         return userMapper.selectById(userId);
     }
+
+    @Override
+    public void test(Integer aa) {
+        userMapper.test(aa);
+    }
 }
