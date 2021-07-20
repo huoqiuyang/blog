@@ -41,8 +41,8 @@ public class UserController {
     }
 
     @GetMapping("/findById")
-    public AjaxResult findById(Integer userId){
-        return new AjaxResult("查询成功",userService.findById(userId));
+    public AjaxResult findById(Integer id){
+        return new AjaxResult("查询成功",userService.findById(id));
 
     }
 

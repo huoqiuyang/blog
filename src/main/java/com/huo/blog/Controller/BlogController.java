@@ -4,10 +4,7 @@ import com.huo.blog.Common.AjaxResult;
 import com.huo.blog.Service.BlogService;
 import com.huo.blog.Vo.BlogVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/blog")
@@ -25,5 +22,11 @@ public class BlogController {
             return new AjaxResult(false,e.getMessage());
         }
         return  AjaxResult.success();
+    }
+
+    @GetMapping("/findById")
+    public AjaxResult findById(Integer id){
+
+        return new AjaxResult(blogService.findById(id));
     }
 }

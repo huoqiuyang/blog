@@ -24,7 +24,7 @@ public class User {
 
     private String autograph;   //个性签名
 
-    private String hedUrl;    //头像地址
+    private String headUrl;    //头像地址
 
     private Integer type;    //0：普通用户（默认）；1：管理员
 
@@ -34,6 +34,5 @@ public class User {
 
     private Date updateTime;
 
-    private Integer ter;
 
 }

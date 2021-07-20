@@ -10,6 +10,7 @@ import java.util.Date;
 @Data
 @TableName("blog")
 public class Blog {
+
     @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
 

@@ -75,6 +75,16 @@ public class AjaxResult extends HashMap<String,Object> {
 
     /**
      *
+     * @param obj
+     */
+    public AjaxResult(Object obj){
+        super.put(FLAG,true);
+        super.put(CODE_TAG,200);
+        super.put(MSG_TAG,"操作成功");
+    }
+
+    /**
+     *
      * @param code 状态码
      * @param flag 请求结果
      * @param msg 返回信息

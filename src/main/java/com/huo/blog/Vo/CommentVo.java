@@ -10,7 +10,5 @@ public class CommentVo {
 
     private Integer pageSize;
 
-
-
     private Comment comment;
 }

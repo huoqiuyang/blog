@@ -1,9 +1,10 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.1.63:3306/myblog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.108.58.57:3306/myblog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT
     username: root
-    password: 2017195
+    password: HQY176212a!
     druid:
       test-on-borrow: true
       test-while-idle: true
+
